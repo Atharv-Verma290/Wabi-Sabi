@@ -13,5 +13,9 @@
         <item name="android:textSize">17sp</item>
         <item name="android:textColor">#808080</item>
     </style>
+    <style name="already_a_m">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
 
 </resources>

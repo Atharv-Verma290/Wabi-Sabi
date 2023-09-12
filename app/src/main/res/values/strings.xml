@@ -6,4 +6,6 @@
     <string name="create_pass">     create password</string>
     <string name="re_enter_pa">     re-enter password</string>
     <string name="join_us">Join Us</string>
+    <string name="already_a_m">already a member?</string>
+    <string name="sign_up">Sign Up</string>
 </resources>
