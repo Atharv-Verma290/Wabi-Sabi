@@ -9,5 +9,7 @@
     <string name="already_a_m">already a member?</string>
     <string name="sign_up">Sign Up</string>
     <string name="welcome_back">Welcome Back</string>
+    <string name="profile">PROFILE</string>
+    <string name="continprof">Continue</string>
 
 </resources>
