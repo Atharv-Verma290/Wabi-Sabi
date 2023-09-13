@@ -1,9 +1,13 @@
 <resources>
     <string name="wabi_sabi">WABI-SABI</string>
-    <string name="welcome">welcome</string>
+    <string name="welcome">Welcome</string>
     <string name="phone_number">     phone number</string>
     <string name="name">     name</string>
     <string name="create_pass">     create password</string>
     <string name="re_enter_pa">     re-enter password</string>
     <string name="join_us">Join Us</string>
+    <string name="already_a_m">already a member?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="welcome_back">Welcome Back</string>
+
 </resources>
