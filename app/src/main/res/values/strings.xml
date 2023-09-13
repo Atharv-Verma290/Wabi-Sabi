@@ -11,5 +11,9 @@
     <string name="welcome_back">Welcome Back</string>
     <string name="profile">PROFILE</string>
     <string name="continprof">Continue</string>
-
+    <string-array name="Gender">
+        <item>Gender:</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
 </resources>
