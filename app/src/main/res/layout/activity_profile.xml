@@ -40,10 +40,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/wabi_sabi" />
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/ellipse_8"
         android:layout_width="64dp"
-        android:layout_height="0dp"
+        android:layout_height="64dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="62dp"
@@ -52,6 +52,7 @@
         app:layout_constraintEnd_toEndOf="@+id/profile"
         app:layout_constraintStart_toStartOf="@+id/profile"
         app:layout_constraintTop_toBottomOf="@+id/profile"
+        app:shapeAppearanceOverlay="@style/Circular"
         android:contentDescription="Avatar" />
 
     <EditText
@@ -151,6 +152,7 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/rectangle_4"
         android:dropDownWidth="match_parent"
+        android:popupBackground="@drawable/rectangle_4"
         app:layout_constraintBottom_toTopOf="@+id/phonenum"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
