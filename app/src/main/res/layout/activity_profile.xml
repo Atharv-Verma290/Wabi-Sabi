@@ -4,16 +4,159 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileActivity">
+    android:background="@color/fig_pink"
+    android:clickable="true"
+    tools:context=".ProfileActivity"
+    android:focusable="true">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="158dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="295dp"
-        android:text="Profile building page"
-        android:textSize="20sp"
+        android:id="@+id/wabi_sabi"
+        android:layout_width="204dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="61dp"
+        android:layout_marginBottom="31dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/wabi_sabi"
+        android:textAppearance="@style/wabi_sabi"
+        app:layout_constraintBottom_toTopOf="@+id/profile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="136dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:gravity="center"
+        android:text="@string/profile"
+        android:textAppearance="@style/profile"
+        app:layout_constraintBottom_toTopOf="@+id/ellipse_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wabi_sabi" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ellipse_8"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="62dp"
+        android:background="#160808"
+        app:layout_constraintBottom_toTopOf="@+id/rectangle_4"
+        app:layout_constraintEnd_toEndOf="@+id/profile"
+        app:layout_constraintStart_toStartOf="@+id/profile"
+        app:layout_constraintTop_toBottomOf="@+id/profile"
+        app:shapeAppearanceOverlay="@style/Circular"
+        android:contentDescription="Avatar" />
+
+    <EditText
+        android:id="@+id/rectangle_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/rectangle_4"
+        android:elevation="9dp"
+        android:hint="name"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/ageprof"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ellipse_8" />
+
+    <EditText
+        android:id="@+id/ageprof"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/rectangle_4"
+        android:elevation="9dp"
+        android:hint="age"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_4" />
+
+    <EditText
+        android:id="@+id/phonenum"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/rectangle_4"
+        android:elevation="9dp"
+        android:hint="phone number"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/emailprof"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <EditText
+        android:id="@+id/emailprof"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/rectangle_4"
+        android:elevation="9dp"
+        android:hint="email"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/contprof"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phonenum" />
+
+    <Button
+        android:id="@+id/contprof"
+        android:layout_width="181dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="57dp"
+        android:backgroundTint="#F89999"
+        android:text="@string/continprof"
+        android:textColor="#360D14"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailprof" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rectangle_4"
+        android:dropDownWidth="match_parent"
+        android:popupBackground="@drawable/rectangle_4"
+        app:layout_constraintBottom_toTopOf="@+id/phonenum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageprof" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
