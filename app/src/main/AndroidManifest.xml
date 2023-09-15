@@ -13,6 +13,9 @@
         android:theme="@style/Theme.WabiSabi"
         tools:targetApi="31">
         <activity
+            android:name=".quizyend"
+            android:exported="false" />
+        <activity
             android:name=".quizsecond"
             android:exported="false" />
         <activity
