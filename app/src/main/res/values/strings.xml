@@ -16,4 +16,7 @@
         <item>Male</item>
         <item>Female</item>
     </string-array>
+    <string name="welcome_let">Welcome\nLet's Begin</string>
+    <string name="Continue">Continue</string>
+
 </resources>
