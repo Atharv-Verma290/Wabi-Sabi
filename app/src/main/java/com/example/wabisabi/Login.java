@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +14,7 @@ import com.google.android.material.navigation.NavigationBarView;
 
 public class Login extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
+    ImageView quizstart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,7 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         bottomNavigationView = findViewById(R.id.bottomNav);
+        quizstart = findViewById(R.id.imageView19);
 
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
@@ -39,5 +41,14 @@ public class Login extends AppCompatActivity {
             }
         });
 
+        quizstart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Login.this, com.example.wabisabi.quizstart.class);
+                startActivity(intent);
+            }
+        });
+
     }
+
 }

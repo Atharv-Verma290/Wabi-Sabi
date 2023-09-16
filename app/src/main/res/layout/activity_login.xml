@@ -125,6 +125,8 @@
             android:id="@+id/imageView19"
             android:layout_width="56dp"
             android:layout_height="46dp"
+            android:contextClickable="true"
+            android:longClickable="false"
             app:layout_constraintBottom_toBottomOf="@+id/imageView18"
             app:layout_constraintEnd_toEndOf="@+id/imageView18"
             app:layout_constraintStart_toStartOf="@+id/imageView18"
