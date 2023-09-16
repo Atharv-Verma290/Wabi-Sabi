@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8EDEB"
+    tools:context=".quizyend">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="66dp"
+        android:backgroundTint="#F8EDEB"
+        android:clickable="true"
+        android:elevation="0dp"
+        android:scaleType="fitCenter"
+        app:borderWidth="0dp"
+        app:elevation="0dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewquizend"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/quitquiz" />
+
+    <Button
+        android:id="@+id/buttonquizend"
+        android:layout_width="242dp"
+        android:layout_height="63dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="#F89999"
+        android:letterSpacing="0.06"
+        android:text="@string/submit"
+        android:textColor="#360D14"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/imageViewquizend"
+        android:layout_width="213dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginBottom="184dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonquizend"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kokoklo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="181dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="277dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="316dp"
+        android:text="@string/endtext"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonquizend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

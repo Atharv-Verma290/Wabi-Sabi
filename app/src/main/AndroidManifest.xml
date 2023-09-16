@@ -18,6 +18,16 @@
         <activity
             android:name=".CameraActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".quizyend"
+            android:exported="false" />
+        <activity
+            android:name=".quizsecond"
+            android:exported="false" />
+        <activity
+            android:name=".quizstart"
+            android:exported="false" />
         <activity
             android:name=".Splash"
             android:exported="true">
@@ -26,6 +36,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
             android:name=".SignupActivity"

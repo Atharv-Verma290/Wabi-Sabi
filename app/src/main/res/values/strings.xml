@@ -23,4 +23,9 @@
 Hi, I am wasabi\nyour personal \nemotion meter
 </string>
     <string name="give_quiz_a">Give Quiz a try!! and meter your emotions</string>
+    <string name="how_are_you">HOW ARE YOU ?</string>
+    <string name="nextt">NEXT</string>
+    <string name="submit">SUBMIT</string>
+    <string name="endtext">Hurrah Submit now</string>
+
 </resources>
