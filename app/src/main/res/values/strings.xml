@@ -11,9 +11,16 @@
     <string name="welcome_back">Welcome Back</string>
     <string name="profile">PROFILE</string>
     <string name="continprof">Continue</string>
+    <string name="home">HOME</string>
     <string-array name="Gender">
         <item>Gender:</item>
         <item>Male</item>
         <item>Female</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hi_i_am_was">
+Hi, I am wasabi\nyour personal \nemotion meter
+</string>
+    <string name="give_quiz_a">Give Quiz a try!! and meter your emotions</string>
 </resources>
