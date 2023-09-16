@@ -13,6 +13,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
 public class Login extends AppCompatActivity {
+
     BottomNavigationView bottomNavigationView;
     ImageView quizstart;
 
@@ -20,6 +21,7 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
 
         bottomNavigationView = findViewById(R.id.bottomNav);
         quizstart = findViewById(R.id.imageView19);
