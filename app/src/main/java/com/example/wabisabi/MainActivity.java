@@ -8,14 +8,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 
 public class MainActivity extends AppCompatActivity {
-    EditText name;
-    EditText phone;
-    EditText createPassword;
-    EditText re_createPassword;
+    EditText signupName;
+
+    EditText signupphonenumber;
+    EditText signuppassword;
+    EditText signuprecreatepassword;
     Button joinUs;
     Button signUp;
+
+    FirebaseDatabase database;
+    DatabaseReference reference;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,16 +42,28 @@ public class MainActivity extends AppCompatActivity {
             editor.apply();
         }
 
-        name = findViewById(R.id.editTextText);
-        phone = findViewById(R.id.editTextPhone);
-        createPassword = findViewById(R.id.editTextTextPassword);
-        re_createPassword = findViewById(R.id.editTextTextPassword3);
+        signupName = findViewById(R.id.editTextText);
+        signupphonenumber = findViewById(R.id.editTextPhone);
+        signuppassword = findViewById(R.id.editTextTextPassword);
+        signuprecreatepassword = findViewById(R.id.editTextTextPassword3);
         joinUs = findViewById(R.id.button);
         signUp = findViewById(R.id.button2);
 
         joinUs.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
+                database = FirebaseDatabase.getInstance();
+                reference = database.getReference("users");
+
+                String name = signupName.getText().toString();
+                String phone_number = signupphonenumber.getText().toString();
+                String  create_pass = signuppassword .getText().toString();
+                String re_enter_pa = signuprecreatepassword.getText().toString();
+
+                HelperClass helperClass = new HelperClass(name, phone_number,  create_pass, re_enter_pa);
+                reference.child(name).setValue(helperClass);
+
+                Toast.makeText(MainActivity.this, "You have signup successfully!", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
                 startActivity(intent);
             }
@@ -50,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
 
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,SignupActivity.class);
                 startActivity(intent);
             }
