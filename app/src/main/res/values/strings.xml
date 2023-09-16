@@ -16,4 +16,9 @@
         <item>Male</item>
         <item>Female</item>
     </string-array>
+    <string name="how_are_you">HOW ARE YOU ?</string>
+    <string name="nextt">NEXT</string>
+    <string name="submit">SUBMIT</string>
+    <string name="endtext">Hurrah Submit now</string>
+
 </resources>
