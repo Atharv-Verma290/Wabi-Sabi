@@ -41,12 +41,13 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="4dp"
-        android:background="#160808"
+        android:background="#d2d2d2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:shapeAppearanceOverlay="@style/Circular" />
+        app:shapeAppearanceOverlay="@style/Circular"
+        tools:srcCompat="@drawable/avatar" />
 
 
     <TextView
@@ -138,7 +139,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="1dp"
         android:background="#FCD5CE"
-        app:itemIconSize="60dp"
+        app:itemIconSize="55dp"
         app:itemIconTint="#360D14"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="1dp"
         android:background="#FCD5CE"
-        app:itemIconSize="60dp"
+        app:itemIconSize="55dp"
         app:itemIconTint="#360D14"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

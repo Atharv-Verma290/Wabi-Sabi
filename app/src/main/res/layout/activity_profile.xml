@@ -47,13 +47,14 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="62dp"
-        android:background="#160808"
+        android:background="#d2d2d2"
+        android:contentDescription="Avatar"
         app:layout_constraintBottom_toTopOf="@+id/rectangle_4"
         app:layout_constraintEnd_toEndOf="@+id/profile"
         app:layout_constraintStart_toStartOf="@+id/profile"
         app:layout_constraintTop_toBottomOf="@+id/profile"
         app:shapeAppearanceOverlay="@style/Circular"
-        android:contentDescription="Avatar" />
+        tools:srcCompat="@drawable/avatar" />
 
     <EditText
         android:id="@+id/rectangle_4"
@@ -71,7 +72,9 @@
         app:layout_constraintBottom_toTopOf="@+id/ageprof"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ellipse_8" />
+        app:layout_constraintTop_toBottomOf="@+id/ellipse_8"
+        android:inputType="text"
+         />
 
     <EditText
         android:id="@+id/ageprof"
@@ -89,7 +92,8 @@
         app:layout_constraintBottom_toTopOf="@+id/spinner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rectangle_4" />
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_4"
+        android:inputType="number" />
 
     <EditText
         android:id="@+id/phonenum"
@@ -107,7 +111,8 @@
         app:layout_constraintBottom_toTopOf="@+id/emailprof"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        android:inputType="number" />
 
     <EditText
         android:id="@+id/emailprof"
@@ -125,7 +130,8 @@
         app:layout_constraintBottom_toTopOf="@+id/contprof"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phonenum" />
+        app:layout_constraintTop_toBottomOf="@+id/phonenum"
+        android:inputType="text" />
 
     <Button
         android:id="@+id/contprof"
