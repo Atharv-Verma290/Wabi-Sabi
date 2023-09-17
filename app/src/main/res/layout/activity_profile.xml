@@ -68,13 +68,14 @@
         android:background="@drawable/rectangle_4"
         android:elevation="9dp"
         android:hint="name"
+        android:includeFontPadding="false"
+        android:inputType="text"
+        android:paddingStart="20dp"
         android:textColorHint="#808080"
         app:layout_constraintBottom_toTopOf="@+id/ageprof"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ellipse_8"
-        android:inputType="text"
-         />
+        app:layout_constraintTop_toBottomOf="@+id/ellipse_8" />
 
     <EditText
         android:id="@+id/ageprof"
@@ -88,12 +89,13 @@
         android:background="@drawable/rectangle_4"
         android:elevation="9dp"
         android:hint="age"
+        android:inputType="number"
+        android:paddingStart="20dp"
         android:textColorHint="#808080"
         app:layout_constraintBottom_toTopOf="@+id/spinner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rectangle_4"
-        android:inputType="number" />
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_4" />
 
     <EditText
         android:id="@+id/phonenum"
@@ -107,12 +109,13 @@
         android:background="@drawable/rectangle_4"
         android:elevation="9dp"
         android:hint="phone number"
+        android:inputType="phone"
+        android:paddingStart="20dp"
         android:textColorHint="#808080"
         app:layout_constraintBottom_toTopOf="@+id/emailprof"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner"
-        android:inputType="number" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
     <EditText
         android:id="@+id/emailprof"
@@ -126,12 +129,13 @@
         android:background="@drawable/rectangle_4"
         android:elevation="9dp"
         android:hint="email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
         android:textColorHint="#808080"
         app:layout_constraintBottom_toTopOf="@+id/contprof"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phonenum"
-        android:inputType="text" />
+        app:layout_constraintTop_toBottomOf="@+id/phonenum" />
 
     <Button
         android:id="@+id/contprof"
@@ -158,6 +162,7 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/rectangle_4"
         android:dropDownWidth="match_parent"
+        android:paddingStart="20dp"
         android:popupBackground="@drawable/rectangle_4"
         app:layout_constraintBottom_toTopOf="@+id/phonenum"
         app:layout_constraintEnd_toEndOf="parent"
