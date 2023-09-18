@@ -12,8 +12,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="43dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="362dp"
         android:backgroundTint="#F8EDEB"
         android:clickable="true"
         android:elevation="0dp"
@@ -21,7 +21,7 @@
         app:borderWidth="0dp"
         app:elevation="0dp"
         app:fabSize="normal"
-        app:layout_constraintBottom_toTopOf="@+id/textViewquiz"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.063"
@@ -29,8 +29,8 @@
 
     <TextView
         android:id="@+id/textViewquiz"
-        android:layout_width="292dp"
-        android:layout_height="0dp"
+        android:layout_width="320dp"
+        android:layout_height="58dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
@@ -38,12 +38,12 @@
         android:layout_marginBottom="561dp"
         android:gravity="top"
         android:letterSpacing="0.04"
-        android:text="@string/how_are_you"
+        android:text="@string/ques2"
         android:textAppearance="@style/how_are_you"
         android:textSize="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/floatingActionButton1" />
 
@@ -65,6 +65,104 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.947" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="135dp"
+        android:layout_height="129dp"
+        android:contextClickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton3"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintHorizontal_bias="0.389"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewquiz"
+        app:layout_constraintVertical_bias="0.638"
+        app:srcCompat="@drawable/rectangle_3" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="135dp"
+        android:layout_height="129dp"
+        android:contextClickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/textViewquiz"
+        app:layout_constraintVertical_bias="0.638"
+        app:srcCompat="@drawable/rectangle_3" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="97dp"
+        android:layout_height="33dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="@string/hurt"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+        app:layout_constraintStart_toStartOf="@+id/imageButton2"
+        app:layout_constraintTop_toTopOf="@+id/imageButton2" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="97dp"
+        android:layout_height="33dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="@string/cheerful"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="@+id/imageButton" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="135dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="144dp"
+        android:contextClickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton1"
+        app:srcCompat="@drawable/rectangle_3" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="135dp"
+        android:layout_height="129dp"
+        android:contextClickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toEndOf="@+id/imageButton3"
+        app:srcCompat="@drawable/rectangle_3" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="97dp"
+        android:layout_height="33dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="@string/gloomy"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+        app:layout_constraintStart_toStartOf="@+id/imageButton3"
+        app:layout_constraintTop_toTopOf="@+id/imageButton3" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="97dp"
+        android:layout_height="33dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="@string/disgust"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton4"
+        app:layout_constraintStart_toStartOf="@+id/imageButton4"
+        app:layout_constraintTop_toTopOf="@+id/imageButton4" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
