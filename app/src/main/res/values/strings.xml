@@ -17,15 +17,24 @@
         <item>Male</item>
         <item>Female</item>
     </string-array>
+    <string name="how_are_you">How is the boy below feeling ?</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hi_i_am_was">
 Hi, I am wasabi\nyour personal \nemotion meter
 </string>
     <string name="give_quiz_a">Give Quiz a try!! and meter your emotions</string>
-    <string name="how_are_you">HOW ARE YOU ?</string>
+
     <string name="nextt">NEXT</string>
     <string name="submit">SUBMIT</string>
     <string name="endtext">Hurrah Submit now</string>
+    <string name="gloomy">Gloomy</string>
+    <string name="cheerful">Cheerful</string>
+    <string name="agony">Agony</string>
+    <string name="fear">Fear</string>
+    <string name="ques2">If you fell down from stairs, then how\'ll you be feeling?</string>
+    <string name="hurt">Pain</string>
+    <string name="disgust">Disgust</string>
+    <string name="pain">Pain</string>
 
 </resources>

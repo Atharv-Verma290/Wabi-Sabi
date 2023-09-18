@@ -11,9 +11,6 @@
         android:id="@+id/floatingActionButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="43dp"
-        android:layout_marginBottom="20dp"
         android:backgroundTint="#F8EDEB"
         android:clickable="true"
         android:elevation="0dp"
@@ -22,30 +19,34 @@
         app:elevation="0dp"
         app:fabSize="normal"
         app:layout_constraintBottom_toTopOf="@+id/textViewquiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.063"
-        app:srcCompat="@drawable/quitquiz" />
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/quitquiz"
+        android:focusable="true"
+        android:contentDescription="close button" />
 
     <TextView
         android:id="@+id/textViewquiz"
-        android:layout_width="292dp"
-        android:layout_height="0dp"
-        android:layout_alignParentLeft="true"
+        android:layout_width="320dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="561dp"
         android:gravity="top"
         android:letterSpacing="0.04"
-        android:text="@string/how_are_you"
+        android:text="@string/ques2"
         android:textAppearance="@style/how_are_you"
-        android:textSize="23dp"
+        android:textSize="23sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton1" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.178" />
 
     <Button
         android:id="@+id/buttonquiz"
@@ -53,7 +54,6 @@
         android:layout_height="59dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="92dp"
         android:backgroundTint="#F89999"
         android:letterSpacing="0.06"
         android:text="@string/nextt"
@@ -61,10 +61,74 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.947" />
+        app:layout_constraintTop_toBottomOf="@+id/option_3"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/option_1"
+        android:layout_width="135dp"
+        android:layout_height="129dp"
+        android:backgroundTint="#F9DCC4"
+        android:text="@string/cheerful"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/option_3"
+        app:layout_constraintEnd_toStartOf="@+id/option_2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewquiz"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/option_2"
+        android:layout_width="135dp"
+        android:layout_height="129dp"
+        android:backgroundTint="#F9DCC4"
+        android:text="@string/pain"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/option_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/option_1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewquiz"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/option_3"
+        android:layout_width="135dp"
+        android:layout_height="129dp"
+        android:backgroundTint="#F9DCC4"
+        android:text="@string/gloomy"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonquiz"
+        app:layout_constraintEnd_toStartOf="@+id/option_4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option_1"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/option_4"
+        android:layout_width="135dp"
+        android:layout_height="129dp"
+        android:backgroundTint="#F9DCC4"
+        android:text="@string/disgust"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonquiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/option_3"
+        app:layout_constraintTop_toBottomOf="@+id/option_2"
+        app:layout_constraintVertical_bias="0.5" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
