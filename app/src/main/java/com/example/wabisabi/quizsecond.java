@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class quizsecond extends AppCompatActivity implements View.OnClickListener{
     Button button,Option1,Option2,Option3,Option4;
     FloatingActionButton close;
