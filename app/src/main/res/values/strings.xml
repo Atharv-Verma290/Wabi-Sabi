@@ -27,5 +27,6 @@
     <string name="ques2">If you fell down from stairs, then how\'ll you be feeling?</string>
     <string name="hurt">Pain</string>
     <string name="disgust">Disgust</string>
+    <string name="pain">Pain</string>
 
 </resources>
